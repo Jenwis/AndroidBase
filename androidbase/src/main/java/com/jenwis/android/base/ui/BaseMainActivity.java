@@ -49,22 +49,22 @@ public abstract class BaseMainActivity extends BaseActivity {
     }
 
     /*
-    -----------------------------------begin setBPMonitorContentView--------------------------------
+    -----------------------------------begin setBaseContentView--------------------------------
     * 此3个设置布局的方法，为所有具体类所调用，替代调用Activity自带的setContentView方法
     * */
-    public void setBPMonitorContentView(int layoutResId) {
+    public void setBaseContentView(int layoutResId) {
         mContainerView = LayoutInflater.from(this).inflate(layoutResId, null);
     }
 
-    public void setBPMonitorContentView(View view) {
+    public void setBaseContentView(View view) {
         mContainerView = view;
     }
 
-    public void setBPMonitorContentView(View view, ViewGroup.LayoutParams params) {
+    public void setBaseContentView(View view, ViewGroup.LayoutParams params) {
         mContainerView = view;
         mContainerView.setLayoutParams(params);
     }
-    /*----------------------------------end setBPMonitorContentView-------------------------------*/
+    /*----------------------------------end setBaseContentView-------------------------------*/
 
     public ActionBar getBPActionBar() {
         return mActionBar;
