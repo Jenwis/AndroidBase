@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_505050">#505050</color>
+    <color name="color_646464">#646464</color>
+    <color name="color_969696">#969696</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_24a096">#24a096</color>
+    <color name="color_ff0f7e56">#ff0f7e56</color>
+    <color name="color_ffffff">#FFFFFF</color>
+    <color name="color_e5e5e5">#e5e5e5</color>
+    <color name="color_ced6d6">#ced6d6</color>
+    <color name="color_ffe0e0e0">#ffe0e0e0</color>
+    <color name="color_aabdc0c0">#aabdc0c0</color>
+    <color name="color_da7568">#da7568</color>
+    <color name="color_a3da68">#a3da68</color>
+    <color name="color_414749">#414749</color>
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="color_ff000000">#ff000000</color>
+
+    <!-- zxing -->
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#fdfd9b0a</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#fdfd9b0a</color>
+
+
+</resources>

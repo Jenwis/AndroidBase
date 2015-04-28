@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ActionbarView">
+        <attr name="titleResId" format="reference" />
+        <attr name="titleColorResId" format="reference" />
+        <attr name="isRightViewVisible" format="boolean" />
+        <attr name="isLeftViewVisible" format="boolean" />
+        <attr name="leftActionDrawableId" format="reference" />
+        <attr name="leftActionStringResId" format="reference" />
+        <attr name="rightActionDrawableId" format="reference" />
+        <attr name="rightActionStringResId" format="reference" />
+        <attr name="rightActionStringColorId" format="reference" />
+        <attr name="isDivideVisible" format="boolean" />
+    </declare-styleable>
+
+</resources>

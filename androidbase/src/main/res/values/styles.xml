@@ -1,0 +1,103 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="style_deliver_view_dark">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.6dp</item>
+    </style>
+
+    <style name="style_text_view_content_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="style_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:background">@color/color_24a096</item>
+    </style>
+
+    <style name="style_button_dialog" parent="style_round_corner_block">
+        <item name="android:textColor">@color/color_ffffff</item>
+        <item name="android:layout_height">@dimen/height_48</item>
+        <item name="android:background">@color/color_24a096</item>
+    </style>
+
+    <style name="style_text_view_content_title_1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:textColor">@color/color_24a096</item>
+    </style>
+
+    <style name="style_text_view_content_instruction">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="style_text_popup_window">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="style_text_view_list_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="dialogWithNoTitle" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="style_round_corner_block">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_20</item>
+        <item name="android:layout_marginRight">@dimen/margin_20</item>
+        <item name="android:textSize">@dimen/text_size_19</item>
+    </style>
+
+    <style name="style_text_grey" parent="style_round_corner_block">
+        <item name="android:textColor">@color/color_646464</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="text_size_19">19sp</dimen>
+
+    <style name="textAppearanceMedium">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="style_data_chart_title">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_24a096</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="style_loading_dialog" parent="@android:style/Theme.Holo">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>
