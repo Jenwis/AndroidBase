@@ -58,6 +58,7 @@ public class ActionBar extends RelativeLayout {
         mRightActionResId = types.getResourceId(R.styleable.ActionbarView_rightActionStringResId, -1);
         mRightActionStringColorId = types.getColorStateList(R.styleable.ActionbarView_rightActionStringColorId);
         isDivideViewVisible = types.getBoolean(R.styleable.ActionbarView_isDivideVisible, true);
+        types.recycle();
     }
 
     private void initActionbar() {
