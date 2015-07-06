@@ -3,6 +3,8 @@ package com.jenwis.android.base.ui;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
+import com.jenwis.android.base.base.anim.LayoutAnimation;
+
 import java.util.ArrayList;
 
 /**
@@ -31,6 +33,7 @@ public abstract class BaseActivity extends FragmentActivity {
         setViewListener();
 
         super.onCreate(savedInstanceState);
+        new LayoutAnimation().startAnimation(getWindow().getDecorView(), LayoutAnimation.AnimationType.SCALE);
     }
 
     public abstract void init();
