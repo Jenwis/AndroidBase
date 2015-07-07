@@ -30,13 +30,9 @@ public class UIUtils {
         return width;
     }
 
-    ;
-
     public static int getScreenHeight() {
         return height;
     }
-
-    ;
 
     public static int dip2px(Context context, float dipValue) {
         float density = context.getResources().getDisplayMetrics().density;

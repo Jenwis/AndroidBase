@@ -1,4 +1,4 @@
-package com.jenwis.android.base.ui;
+package com.jenwis.android.base.ui.dialog;
 
 import android.app.DialogFragment;
 import android.os.Bundle;

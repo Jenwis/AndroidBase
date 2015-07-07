@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
 import com.jenwis.android.base.base.anim.LayoutAnimation;
+import com.jenwis.android.base.ui.dialog.LoadingDialog;
 
 import java.util.ArrayList;
 

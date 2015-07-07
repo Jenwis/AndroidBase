@@ -1,4 +1,4 @@
-<com.jenwis.android.base.ui.ActionBar xmlns:android="http://schemas.android.com/apk/res/android"
+<com.jenwis.android.base.ui.actionbar.ActionBar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/tools"
     android:id="@+id/action_bar"
     android:layout_width="match_parent"
@@ -7,4 +7,4 @@
     android:background="@color/color_24a096"
     custom:titleResId="@string/action_bar_title_measure">
 
-</com.jenwis.android.base.ui.ActionBar>
+</com.jenwis.android.base.ui.actionbar.ActionBar>

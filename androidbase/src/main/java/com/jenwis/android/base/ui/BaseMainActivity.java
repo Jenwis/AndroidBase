@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
 import com.jenwis.android.base.R;
+import com.jenwis.android.base.ui.actionbar.ActionBar;
 
 /**
  * Created by zhengyuji on 15/2/2.

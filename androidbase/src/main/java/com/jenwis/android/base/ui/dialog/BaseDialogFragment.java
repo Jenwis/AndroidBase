@@ -1,4 +1,4 @@
-package com.jenwis.android.base.ui;
+package com.jenwis.android.base.ui.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -11,6 +11,8 @@ import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.jenwis.android.base.ui.BaseActivity;
 
 public abstract class BaseDialogFragment extends DialogFragment {
     private boolean mIsShowing;

@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.jenwis.android.base.ui.actionbar.ActionBar;
+
 import java.util.ArrayList;
 
 /**
