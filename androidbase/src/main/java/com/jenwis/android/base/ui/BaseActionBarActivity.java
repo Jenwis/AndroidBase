@@ -17,7 +17,7 @@ import com.jenwis.android.base.ui.actionbar.ActionBar;
  * 此类主要实现对ActionBar的统一定义
  * 规定所有Activity的顶级布局为RelativeLayout,然后再一个RelativeLayout
  */
-public abstract class BaseMainActivity extends BaseActivity {
+public abstract class BaseActionBarActivity extends BaseActivity {
     private View mContainerView;
     protected ActionBar mActionBar;
 

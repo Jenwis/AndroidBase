@@ -37,10 +37,10 @@ public abstract class BaseFragment extends Fragment {
     }
 
     private void initActionBar() {
-        mActionBar = ((BaseMainActivity) mActivity).getBPActionBar();
+        mActionBar = ((BaseActionBarActivity) mActivity).getBPActionBar();
     }
 
-    public BaseActivity getBPMonitorBaseActivity() {
+    public BaseActivity getBaseActivity() {
         if (mActivity == null) {
             mActivity = (BaseActivity) getActivity();
         }
@@ -72,9 +72,9 @@ public abstract class BaseFragment extends Fragment {
     public abstract void onDataChange(int type, Object obj);
 
     public ArrayList<BaseFragment> getFragmentList() {
-        BaseActivity bpMonitorBaseActivity = getBPMonitorBaseActivity();
-        if (bpMonitorBaseActivity != null) {
-            return bpMonitorBaseActivity.getFragmentList();
+        BaseActivity baseActivity = getBaseActivity();
+        if (baseActivity != null) {
+            return baseActivity.getFragmentList();
         }
 
         return null;
