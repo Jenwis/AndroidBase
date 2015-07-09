@@ -1,4 +1,7 @@
-- 顶级父类BaseActivity，抽象的，基于FragmentActivity，新增了几个生命周期方法，抽象的，必须重载：
+#AndroidBase
+
+
+ - 顶级父类BaseActivity，抽象的，基于FragmentActivity，新增了几个生命周期方法，抽象的，必须重载：
         init();
         findView();
         setView();
