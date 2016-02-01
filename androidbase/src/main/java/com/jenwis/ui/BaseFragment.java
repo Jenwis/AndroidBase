@@ -1,4 +1,4 @@
-package com.jenwis.android.base.ui;
+package com.jenwis.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.jenwis.android.base.ui.actionbar.ActionBar;
+import com.umeng.analytics.MobclickAgent;
 
 import java.util.ArrayList;
 
@@ -17,7 +17,6 @@ import java.util.ArrayList;
 public abstract class BaseFragment extends Fragment {
     private BaseActivity mActivity;
     protected View mContentView;
-    protected ActionBar mActionBar;
 
     @Override
     public void onAttach(Activity activity) {
@@ -28,7 +27,6 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         init();
-        initActionBar();
         findView();
         setView();
         setViewListener();
@@ -36,8 +34,16 @@ public abstract class BaseFragment extends Fragment {
         return mContentView;
     }
 
-    private void initActionBar() {
-        mActionBar = ((BaseActionBarActivity) mActivity).getBPActionBar();
+    @Override
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onPageStart(getClass().getSimpleName());
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPageEnd(getClass().getSimpleName());
     }
 
     public BaseActivity getBaseActivity() {
@@ -48,7 +54,9 @@ public abstract class BaseFragment extends Fragment {
         return mActivity;
     }
 
-    public abstract void init();
+    public void init() {
+
+    };
 
     /*
     * 通过findViewById初始化类，必须实现

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/alert_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_confirm_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/padding_30"
+        android:textColor="@color/color_303030"
+        android:textSize="@dimen/text_size_20" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="top"
+            android:background="@color/color_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_70"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_view_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_20"
+                android:layout_weight="1"
+                android:background="@color/color_ffffff"
+                android:gravity="center"
+                android:textColor="@color/color_83d8e3"
+                android:textSize="@dimen/text_size_20" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_gray" />
+
+            <TextView
+                android:id="@+id/text_view_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_20"
+                android:layout_weight="1"
+                android:background="@color/color_ffffff"
+                android:gravity="center"
+                android:textColor="@color/color_83d8e3"
+                android:textSize="@dimen/text_size_20" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

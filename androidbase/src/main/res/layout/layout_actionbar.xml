@@ -1,10 +1,7 @@
-<com.jenwis.android.base.ui.actionbar.ActionBar xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:custom="http://schemas.android.com/tools"
+<com.jenwis.ui.actionbar.ActionBar xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/action_bar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/color_ffffff">
 
-    android:background="@color/color_24a096"
-    custom:titleResId="@string/action_bar_title_measure">
-
-</com.jenwis.android.base.ui.actionbar.ActionBar>
+</com.jenwis.ui.actionbar.ActionBar>

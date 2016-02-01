@@ -1,4 +1,4 @@
-package com.jenwis.android.base.base.anim;
+package com.jenwis.base.anim;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -7,12 +7,12 @@ import android.view.ViewGroup;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 
-import com.jenwis.android.base.base.util.UIUtils;
+import com.jenwis.base.util.UIUtils;
 
 public class LayoutAnimation {
     private int mOrderIndex = 0;
     private int mDelay = 100;
-    private int mDuration = 300;
+    private int mDuration = 200;
 
     public LayoutAnimation() {
 

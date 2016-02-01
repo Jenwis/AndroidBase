@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="color_505050">#505050</color>
+    <color name="color_303030">#303030</color>
     <color name="color_646464">#646464</color>
     <color name="color_969696">#969696</color>
     <color name="color_e6e6e6">#e6e6e6</color>
@@ -16,14 +17,15 @@
     <color name="color_414749">#414749</color>
     <color name="color_f0f0f0">#f0f0f0</color>
     <color name="color_ff000000">#ff000000</color>
+    <color name="color_gray">#e4e4e4</color>
 
     <!-- zxing -->
     <color name="viewfinder_frame">#ff000000</color>
-    <color name="viewfinder_laser">#fdfd9b0a</color>
+    <color name="color_fdfd9b0a">#fdfd9b0a</color>
     <color name="viewfinder_mask">#60000000</color>
     <color name="result_view">#b0000000</color>
     <color name="possible_result_points">#fdfd9b0a</color>
-
+    <color name="viewfinder_laser">#fdfd9b0a</color>
 
     <color name="float_transparent">#00000000</color>
     <color name="sweet_dialog_bg_color">#FFFFFF</color>
@@ -44,4 +46,10 @@
     <color name="material_blue_grey_95">#ff21272b</color>
     <color name="material_deep_teal_20">#ff80cbc4</color>
     <color name="material_deep_teal_50">#ff009688</color>
+
+    <color name="color_90000000">#90000000</color>
+    <color name="color_red">#ff4d4d</color>
+    <color name="color_1f86e5">#1f86e5</color>
+    <color name="color_83d8e3">#83d8e3</color>
+    <color name="color_ffc491">#ffc491</color>
 </resources>

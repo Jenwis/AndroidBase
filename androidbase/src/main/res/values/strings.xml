@@ -8,4 +8,5 @@
     <string name="dialog_ok">OK</string>
     <string name="dialog_cancel">Cancel</string>
     <string name="LOADING">Loading...</string>
+    <string name="loading_hard">努力加载中...</string>
 </resources>

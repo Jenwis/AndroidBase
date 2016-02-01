@@ -1,4 +1,4 @@
-package com.jenwis.android.base.base.util;
+package com.jenwis.base.util;
 
 import android.content.Context;
 import android.widget.Toast;

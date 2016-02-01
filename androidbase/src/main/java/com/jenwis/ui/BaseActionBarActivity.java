@@ -1,4 +1,4 @@
-package com.jenwis.android.base.ui;
+package com.jenwis.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,8 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-import com.jenwis.android.base.R;
-import com.jenwis.android.base.ui.actionbar.ActionBar;
+import com.jenwis.ui.actionbar.ActionBar;
+import com.ttwg.base.R;
 
 /**
  * Created by zhengyuji on 15/2/2.
@@ -51,7 +51,7 @@ public abstract class BaseActionBarActivity extends BaseActivity {
 
     /*
     -----------------------------------begin setBaseContentView--------------------------------
-    * 此3个设置布局的方法，为所有具体类所调用，替代调用Activity自带的setContentView方法
+    * 此6个设置布局的方法，为所有具体类所调用，替代调用Activity自带的setContentView方法
     * */
     public void setBaseContentView(int layoutResId) {
         mContainerView = LayoutInflater.from(this).inflate(layoutResId, null);
@@ -65,9 +65,25 @@ public abstract class BaseActionBarActivity extends BaseActivity {
         mContainerView = view;
         mContainerView.setLayoutParams(params);
     }
+
+    public void setBaseContentView(int layoutResId, boolean layoutAnimation) {
+        mContainerView = LayoutInflater.from(this).inflate(layoutResId, null);
+        this.mLayoutAnimation = layoutAnimation;
+    }
+
+    public void setBaseContentView(View view, boolean layoutAnimation) {
+        mContainerView = view;
+        this.mLayoutAnimation = layoutAnimation;
+    }
+
+    public void setBaseContentView(View view, ViewGroup.LayoutParams params, boolean layoutAnimation) {
+        mContainerView = view;
+        mContainerView.setLayoutParams(params);
+        this.mLayoutAnimation = layoutAnimation;
+    }
     /*----------------------------------end setBaseContentView-------------------------------*/
 
-    public ActionBar getBPActionBar() {
+    public ActionBar getMyActionBar() {
         return mActionBar;
     }
 }

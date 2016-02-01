@@ -1,4 +1,4 @@
-package com.jenwis.android.base.ui.dialog;
+package com.jenwis.ui.dialog;
 
 import android.content.Context;
 import android.content.res.Resources;

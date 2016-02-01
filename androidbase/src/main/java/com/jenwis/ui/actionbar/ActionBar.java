@@ -1,4 +1,4 @@
-package com.jenwis.android.base.ui.actionbar;
+package com.jenwis.ui.actionbar;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -7,10 +7,11 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.jenwis.android.base.R;
+import com.ttwg.base.R;
 
 /**
  * Created by zhengyuji on 15/2/2.
@@ -24,6 +25,7 @@ public class ActionBar extends RelativeLayout {
     private int mRightActionResId;
     private int mRightActionDrawableId;
     private ColorStateList mRightActionStringColorId;
+    private LinearLayout mLinearLayoutActionLeft;
     private TextView mTextViewTitle;
     private TextView mTextViewLeftAction;
     private TextView mTextViewRightAction;
@@ -62,6 +64,7 @@ public class ActionBar extends RelativeLayout {
     }
 
     private void initActionbar() {
+        mLinearLayoutActionLeft = (LinearLayout) findViewById(R.id.linear_layout_action_left);
         mTextViewTitle = (TextView) findViewById(R.id.text_view_action_title);
         mTextViewLeftAction = (TextView) findViewById(R.id.text_view_action_left);
         mTextViewRightAction = (TextView) findViewById(R.id.text_view_action_right);
@@ -110,8 +113,10 @@ public class ActionBar extends RelativeLayout {
         if (mRightActionStringColorId != null) {
             mTextViewRightAction.setTextColor(mRightActionStringColorId);
         } else {
-            ColorStateList colorStateList = getResources().getColorStateList(R.color.color_text_selector);
-            mTextViewRightAction.setTextColor(colorStateList);
+            //ColorStateList colorStateList = getResources().getColorStateList(R.color.color_text_selector);
+            //mTextViewRightAction.setTextColor(colorStateList);
+
+            mTextViewRightAction.setTextColor(getResources().getColor(R.color.color_414749));
         }
         if (mTitleId != -1) {
             mTextViewTitle.setText(mTitleId);
@@ -119,7 +124,7 @@ public class ActionBar extends RelativeLayout {
         if (mTitleColorId != null) {
             mTextViewTitle.setTextColor(mTitleColorId);
         } else {
-            mTextViewTitle.setTextColor(getResources().getColor(R.color.color_ffffff));
+            mTextViewTitle.setTextColor(getResources().getColor(R.color.color_414749));
         }
         if (isDivideViewVisible) {
             mDivideView.setVisibility(VISIBLE);
@@ -134,7 +139,7 @@ public class ActionBar extends RelativeLayout {
     }
 
     public void setLeftActionClickListener(OnClickListener listener) {
-        mTextViewLeftAction.setOnClickListener(listener);
+        mLinearLayoutActionLeft.setOnClickListener(listener);
     }
 
     public void setRightActionClickListener(OnClickListener listener) {

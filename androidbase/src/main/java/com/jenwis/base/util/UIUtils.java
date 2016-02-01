@@ -1,4 +1,4 @@
-package com.jenwis.android.base.base.util;
+package com.jenwis.base.util;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
+import com.ttwg.base.R;
 
 /**
  * Created by zhengyuji on 9/4/14.
@@ -90,5 +92,9 @@ public class UIUtils {
         params.height = totalHeight + (listView.getDividerHeight() * (listAdapter.getCount() - 1));
         listView.setLayoutParams(params);
         return totalHeight;
+    }
+
+    public static int getThisActionBarHeight(Context context) {
+        return (int) context.getResources().getDimension(R.dimen.height_48);
     }
 }
